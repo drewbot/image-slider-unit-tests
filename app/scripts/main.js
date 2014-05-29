@@ -11,12 +11,10 @@ function Slider(array, location, interval, fade, height) {
 		throw new Error ('Array must have content');
 	} else {
 		$(location).attr('src', array[0]);
-		$(location).attr('height', height);
 			setInterval(function() {
 				$(location).fadeOut(fade, function() {
 				$(this).attr('src', array[counter]).fadeIn(fade);
-				counter = counter == imageCount - 1 ? 0 : counter += 1;
-				$(this).attr('height', height)
+				counter = imageCount - 1 ? 0 : counter += 1;
 			});
 		}, interval);
 	};

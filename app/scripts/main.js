@@ -14,7 +14,7 @@ function Slider(array, location, interval, fade, height) {
 			setInterval(function() {
 				$(location).fadeOut(fade, function() {
 				$(this).attr('src', array[counter]).fadeIn(fade);
-				counter = imageCount - 1 ? 0 : counter += 1;
+				counter = counter == imageCount - 1 ? 0 : counter += 1;
 			});
 		}, interval);
 	};

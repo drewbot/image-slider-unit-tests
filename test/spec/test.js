@@ -42,51 +42,51 @@
 
     //Start Mason's example tests
  
-    // describe("the Die constuctor", function(){
-    //   it("correctly sets the # of sides on instances", function(){
+    describe("the Die constuctor", function(){
+      it("correctly sets the # of sides on instances", function(){
  
-    //     var dieInstance = new Die(9);
-    //     expect(dieInstance.sides).to.equal(9);
+        var dieInstance = new Die(9);
+        expect(dieInstance.sides).to.equal(9);
  
-    //     var dieInstance = new Die(92837429);
-    //     expect(dieInstance.sides).to.equal(92837429);
-    //   });
+        var dieInstance = new Die(92837429);
+        expect(dieInstance.sides).to.equal(92837429);
+      });
  
-    //   it("should throw when given non-number args", function(){
+      it("should throw when given non-number args", function(){
  
-    //     var erroneousDieCall = function(){
-    //       new Die("cool");
-    //     }
-    //     expect(erroneousDieCall).to.throw(Error);
-    //   });
-    // });
+        var erroneousDieCall = function(){
+          new Die("cool");
+        }
+        expect(erroneousDieCall).to.throw(Error);
+      });
+    });
  
-    // describe("Die instances", function(){
+    describe("Die instances", function(){
  
-    //   it("should roll random numbers in valid range", function(){
+      it("should roll random numbers in valid range", function(){
         
-    //     var dieInstance = new Die(20);
+        var dieInstance = new Die(20);
  
-    //     for(var i = 0; i < 999; i += 1) {
-    //       var result = dieInstance.roll();
-    //       expect(result).to.be.within(1,20);
-    //     }
-    //   })
-    // });
+        for(var i = 0; i < 999; i += 1) {
+          var result = dieInstance.roll();
+          expect(result).to.be.within(1,20);
+        }
+      })
+    });
  
-    // describe("a Die view", function(){
+    describe("a Die view", function(){
  
-    //   it("should render a die template", function(){
+      it("should render a die template", function(){
  
-    //     var dieInstance = new Die(6);
-    //     var result = renderDie(dieInstance);
+        var dieInstance = new Die(6);
+        var result = renderDie(dieInstance);
  
-    //     expect(result).to.have.string('6');
-    //     expect(result).to.have.string('5');
-    //     expect(result).to.have.string('4');
-    //     expect(result).to.have.string('roll-button');
-    //   })
-    // });
+        expect(result).to.have.string('6');
+        expect(result).to.have.string('5');
+        expect(result).to.have.string('4');
+        expect(result).to.have.string('roll-button');
+      })
+    });
 
     //End Mason's example tests
 

@@ -2,7 +2,7 @@
 
 var imageArray = new Array("images/img1.jpg", "images/img2.jpg", "images/img3.jpg");
 
-function Slider(array, location, interval, fade, height) {
+function Slider(array, location, interval, fade) {
 	var imageCount = array.length,
 	counter = 1;
 	if (!$.isArray(array)){
@@ -20,7 +20,7 @@ function Slider(array, location, interval, fade, height) {
 	};
 }
 
-var nameYourSlider = new Slider(imageArray, '.slider-images', 2500, 500, '100px');
+var nameYourSlider = new Slider(imageArray, '.slider-images', 2500, 500);
 
 //Includes height
 
